@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import Counter from '../components/Counter'
 
-export const CounterRedux = connect(
+export default connect(
   (state) => ({ value: state }),
   (dispatch) => ({
     increseMethod: () => dispatch({ type: "INCRESE" }),

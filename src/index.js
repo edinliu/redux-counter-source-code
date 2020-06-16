@@ -1,11 +1,13 @@
 import React from 'react'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import { CounterRedux } from './containers'
 import reducer from './reducers'
 import ReactDOM from 'react-dom'
 import 'bootstrap/scss/bootstrap.scss'
 import './index.scss'
+import BsJumbotron from './components/BsJumbotron'
+import CounterRedux from './containers'
+import './images/snapshot.png'
 
 const store = createStore(
   reducer, /* preloadedState, */
@@ -14,5 +16,5 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <CounterRedux />
+    <BsJumbotron>  <CounterRedux /></BsJumbotron>
   </Provider>, document.querySelector("#root"))

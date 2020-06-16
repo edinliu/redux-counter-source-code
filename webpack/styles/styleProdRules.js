@@ -21,13 +21,13 @@ const postCssConfig = {
           },
         }]
       }),
-      require('@fullhuman/postcss-purgecss')({
-        content: [
-          './src/*.js',
-          './src/components/*.js',
-          './src/pages/*.js'
-        ]
-      })
+      // require('@fullhuman/postcss-purgecss')({
+      //   content: [
+      //     './src/*.js',
+      //     './src/components/*.js',
+      //     './src/pages/*.js'
+      //   ]
+      // })
     ],
   },
 }
