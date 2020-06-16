@@ -7,3 +7,5 @@
 https://edinliu.github.io/redux-counter/
 
 # 原始碼:
+
+https://github.com/edinliu/redux-counter-source-code
